@@ -1,14 +1,13 @@
 import React from "react";
 
-// Automatically import all jpg images from the folder
-const imageModules = import.meta.glob("@/assets/HabibaTours/*.jpg", { eager: true });
+// Correct glob path (relative to this file location)
+const imageModules = import.meta.glob("../assets/HabibaTours/*.jpg", { eager: true });
 
-// Convert to array of image paths
 const images = Object.values(imageModules).map((mod) => mod.default);
 
 const Gallery = () => {
   return (
-    <div className="py-10 px-4 md:px-12 bg-white">
+    <div className="py-7 px-4 md:px-12 bg-white">
       <h2 className="text-3xl font-bold text-center mb-8 text-teal-800">
         Tour Gallery
       </h2>

@@ -7,11 +7,15 @@ import Gallery from './Pages/Gallery'
 
 const App = () => {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/gallery" element={<Gallery />} />
-      <Route path="*" element={<div>404 Not Found</div>} />
-    </Routes>
+    <><
+      Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="*" element={<div>404 Not Found</div>} />
+      </Routes>
+      <Footer />
+    </>
   )
 }
 

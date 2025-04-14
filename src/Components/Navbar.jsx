@@ -15,7 +15,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="absolute top-0 left-1/2 transform -translate-x-1/2 w-full max-w-[1200px] px-4 py-4 flex items-center justify-between border-b-[3px] border-[maroon] bg-white z-10">
+    <nav className="relative top-0 left-1/2 transform -translate-x-1/2 w-full max-w-[1200px] px-4 py-4 flex items-center justify-between border-b-[3px] border-[maroon] bg-white z-10">
       <div className="text-xl font-bold text-gray-900 cursor-pointer">
         Habiba Tours and Travels <span className="text-[maroon]">.</span>
       </div>
