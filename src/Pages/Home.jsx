@@ -6,6 +6,7 @@ import destination2 from '../assets/destination-2.webp';
 import destination3 from '../assets/destination-3.webp';
 import destination4 from '../assets/destination-4.webp';
 import { Link } from 'react-router-dom';
+import Visit from '../Components/Visit';
 
 const destinations = [
   { img: destination1, title: 'Makkah', subtitle: 'Saudi Arabia' },
@@ -57,6 +58,27 @@ const Home = () => {
           View All Destinations
         </Link>
       </section>
+
+    
+      <Visit />
+
+      <section className="bg-yellow-50 py-12 px-4 text-center">
+  <div className="max-w-3xl mx-auto">
+    <h2 className="text-3xl md:text-4xl font-bold text-[#0d213f] mb-4">
+      Explore Moments of Joy & Adventure
+    </h2>
+    <p className="text-lg text-gray-700 mb-6">
+      Dive into our photo gallery and relive the memories from our exciting tours and travel packages.
+    </p>
+    <a
+      href="/gallery"
+      className="inline-block bg-teal-600 hover:bg-teal-700 text-white font-semibold text-lg py-3 px-8 rounded-full shadow-lg transition duration-300"
+    >
+      Visit Our Gallery
+    </a>
+  </div>
+</section>
+
     </>
   )
 }

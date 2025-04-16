@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
-    <header className="bg-[#fafcff] pt-10 px-4 sm:px-6 lg:px-8">
+    <header className="bg-[#fafcff] pt-2 px-3 sm:px-6 lg:px-8">
       <div className="max-w-[1200px] mx-auto py-20 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         {/* Header Content */}
         <div className="flex items-center justify-center opacity-0 animate-[slideFromLeft_2s_ease_forwards]">
@@ -20,6 +20,9 @@ const Hero = () => {
             <h1 className="text-4xl md:text-5xl font-bold text-[#0d213f] bangla text-center leading-tight">
               হাবিবা ট্যুরস এন্ড ট্রাভেলস
             </h1>
+            <p className="text-center text-teal-800 font-extrabold mt-6 bangla text-xl">
+        “আমরা আল্লাহর মেহমানদের খাদেম”
+      </p>
             <p className="bangla text-base font-medium text-[#0d213f] justifycenter">
               আমাদের সাথে আপনার ভ্রমণ আরও উপভোগ্য করুন। আমরা সেরা ট্রাভেল এজেন্সি হিসেবে
               ট্যুরস, টিকেটিং এবং হজ্ব এজেন্সির সেরা সেবা প্রদান করছি, যাতে আপনার প্রতিটি
