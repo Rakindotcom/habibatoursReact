@@ -11,7 +11,6 @@ const Hero = () => {
   return (
     <header className="bg-[#fafcff] pt-2 px-3 sm:px-6 lg:px-8">
       <div className="max-w-[1200px] mx-auto py-20 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        {/* Header Content */}
         <div className="flex items-center justify-center opacity-0 animate-[slideFromLeft_2s_ease_forwards]">
           <div className="w-full max-w-[400px] grid gap-4">
             <p className="bangla text-[maroon] text-2xl font-bold text-center">
@@ -21,22 +20,29 @@ const Hero = () => {
               হাবিবা ট্যুরস এন্ড ট্রাভেলস
             </h1>
             <p className="text-center text-teal-800 font-extrabold mt-6 bangla text-xl">
-        “আমরা আল্লাহর মেহমানদের খাদেম”
-      </p>
+              “আমরা আল্লাহর মেহমানদের খাদেম”
+            </p>
             <p className="bangla text-base font-medium text-[#0d213f] justifycenter">
               আমাদের সাথে আপনার ভ্রমণ আরও উপভোগ্য করুন। আমরা সেরা ট্রাভেল এজেন্সি হিসেবে
               ট্যুরস, টিকেটিং এবং হজ্ব এজেন্সির সেরা সেবা প্রদান করছি, যাতে আপনার প্রতিটি
               যাত্রা হয় আরামদায়ক ও স্মরণীয়।
             </p>
             <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6 mt-4">
+              {/* Plan a Trip Button */}
               <Link
                 to="/pricing"
-                className="py-3 px-8 bg-[#124186] text-white rounded-full text-sm font-medium transition duration-300 hover:bg-[#092958] cursor-pointer"
+                className="py-3 px-8 bg-[#124186] text-white rounded-full text-sm font-medium transition duration-300 hover:bg-[#092958] cursor-pointer flex items-center gap-4"
               >
                 Plan a Trip
               </Link>
 
-              <div className="flex items-center gap-4 cursor-pointer">
+              {/* Watch our story - Now linked to YouTube Shorts */}
+              <a
+                href="https://www.youtube.com/@humaounkabirmath9175/shorts"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-4 cursor-pointer"
+              >
                 <div className="relative">
                   <img
                     src={story}
@@ -50,8 +56,9 @@ const Hero = () => {
                 <span className="text-base font-semibold text-[#0d213f] whitespace-nowrap pl-1">
                   Watch our story
                 </span>
-              </div>
+              </a>
             </div>
+
           </div>
         </div>
 
